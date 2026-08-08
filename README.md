@@ -1,16 +1,22 @@
-# Rockchip SDK Documents
+# Vicharak SBC SoC Documents
 
-This repository contains the documents of Rockchip SDKs.
+SoC datasheets and developer docs for the Rockchip and Qualcomm platforms used on [Vicharak](https://docs.vicharak.in) SBCs.
 
-Which includes:
+## Structure
 
-1. Linux SDK Documents
-2. Debian Developer Guide
-3. Rockchip Hardware Documents
-4. Rockchip User Guide
-   and many more.
+```text
+.
+├── rockchip/
+│   ├── datasheet/     # RK3399, RK3576, RK3588
+│   ├── Common/        # Subsystem guides (USB, NPU, Camera, …)
+│   ├── Linux/         # Linux SDK & application notes
+│   └── Others/
+└── qualcomm/
+    ├── datasheet/     # QCS6490
+    ├── Common/        # PMIC, system software
+    └── Linux/         # Linux guides (Audio, Camera, Graphics, …)
+```
 
-[Check SDK Docs list](./docs_list.txt)
+Full file list: [docs_list.txt](./docs_list.txt)
 
-> **Note:** Most of the documents are in Chinese, and some of them are in English.
-> The English documents are marked with `EN` in the file name.
+> **Note:** Most Rockchip docs are Chinese (`CN`); English copies are marked `EN` in the filename.

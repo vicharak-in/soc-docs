@@ -1,3 +1,4 @@
+rockchip
 ├── Common
 │   ├── AUDIO
 │   │   ├── Algorithms
@@ -35,6 +36,7 @@
 │   │   │   ├── Rockchip_Development_Guide_3A_ISP30_v1.1.0.pdf
 │   │   │   ├── Rockchip_Development_Guide_ISP30_CN_v1.2.3.pdf
 │   │   │   ├── Rockchip_Driver_Guide_VI_CN_v1.1.1.pdf
+│   │   │   ├── Rockchip_IQ_Tools_Guide_EN_v1.0.1.pdf
 │   │   │   ├── Rockchip_IQ_Tools_Guide_ISP21_ISP30_CN_v2.0.4.pdf
 │   │   │   └── Rockchip_Tuning_Guide_ISP30_CN_v1.1.0.pdf
 │   │   └── The-Latest-Camera-Documents-Link.txt
@@ -46,7 +48,8 @@
 │   │   ├── Rockchip_Develop_Guide_Gpio_Output_Clocks_CN.pdf
 │   │   └── Rockchip_Develop_Guide_Pll_Ssmod_Clock_CN.pdf
 │   ├── CRYPTO
-│   │   └── Rockchip_Developer_Guide_Crypto_HWRNG_CN.pdf
+│   │   ├── Rockchip_Developer_Guide_Crypto_HWRNG_CN.pdf
+│   │   └── Rockchip_Developer_Guide_Crypto_HWRNG_EN.pdf
 │   ├── DDR
 │   │   ├── Rockchip-Developer-Guide-DDR-CN.pdf
 │   │   ├── Rockchip-Developer-Guide-DDR-EN.pdf
@@ -139,6 +142,7 @@
 │   │   ├── Rockchip_Developer_FAQ_Storage_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_Dual_Storage_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_OTP_CN.pdf
+│   │   ├── Rockchip_Developer_Guide_OTP_EN.pdf
 │   │   ├── Rockchip_Developer_Guide_SATA_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_Secure_Boot_Application_Note_EN.pdf
 │   │   ├── Rockchip_Developer_Guide_Secure_Boot_for_UBoot_Next_Dev_CN.pdf
@@ -226,7 +230,13 @@
 │   └── WATCHDOG
 │       ├── Rockchip_Developer_Guide_Linux_WDT_CN.pdf
 │       └── Rockchip_Developer_Guide_Linux_WDT_EN.pdf
-├── docs_list.txt
+├── datasheet
+│   ├── rk3399
+│   │   └── RK3399 datasheet V1.8.pdf
+│   ├── rk3576
+│   │   └── RK3576 datasheet V1.5.pdf
+│   └── rk3588
+│       └── Rockchip_RK3588_Datasheet_V1.6-20231016.pdf
 ├── Linux
 │   ├── ApplicationNote
 │   │   ├── Rockchip_Developer_Guide_Debian_CN.pdf
@@ -262,6 +272,8 @@
 │   │   └── Rockchip_Developer_Guide_Linux_Graphics_EN.pdf
 │   ├── Multimedia
 │   │   ├── Rockchip_Developer_Guide_Linux_RKADK_CN.pdf
+│   │   ├── Rockchip_Developer_Guide_Microphone_Array_TEST_CN.pdf
+│   │   ├── Rockchip_Developer_Guide_Microphone_Array_Tuning.pdf
 │   │   ├── Rockchip_Developer_Guide_MPP_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_MPP_EN.pdf
 │   │   ├── Rockchip_Developer_Guide_RGA_CN.pdf
@@ -286,6 +298,7 @@
 │   │   ├── Rockchip_Developer_Guide_Linux_Upgrade_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_Linux_Upgrade_EN.pdf
 │   │   └── Rockchip_Introduction_Smart_Screen_OTA_CN.pdf
+│   ├── Rockchip_Developer_Guide_Linux_Software_CN.pdf
 │   ├── Security
 │   │   ├── Rockchip_Developer_Guide_Crypto_HWRNG_CN.pdf
 │   │   ├── Rockchip_Developer_Guide_Linux_Secure_Boot_CN.pdf
@@ -301,24 +314,54 @@
 │       │   └── Quick_Start_Guide_V6.txt
 │       ├── Rockchip_Developer_Guide_Linux_WIFI_BT_CN.pdf
 │       ├── Rockchip_Developer_Guide_Linux_WIFI_BT_EN.pdf
-│       ├── WIFI性能测试PC工具
-│       │   └── iperf-2.0.5-2-win32.zip
-│       └── WIFIBT编程接口
-│           ├── 0001-fix-bluezalsa-redefine.patch
-│           ├── 最新蓝牙接口说明.txt
-│           ├── 最新WIFI接口说明.txt
-│           ├── README.txt
-│           ├── RK平台_RTL8723DS_AIRKISS配网说明.pdf
-│           ├── RKWIFIBT_APP_V1.1.7z
-│           ├── Rockchip_Developer_Guide_DeviceIo_Bluetooth_CN.pdf
-│           ├── Rockchip_Developer_Guide_DeviceIo_Bluetooth_EN.pdf
-│           ├── Rockchip_Developer_Guide_Network_Config_CN.pdf
-│           ├── Rockchip_Developer_Guide_Network_Config_EN.pdf
-│           ├── Rockchip_Introduction_RK3308_DeviceIo_WIFI_CN.pdf
-│           └── Rockchip_Introduction_RK3308_DeviceIo_WIFI_EN.pdf
+│       ├── WIFIBT编程接口
+│       │   ├── 0001-fix-bluezalsa-redefine.patch
+│       │   ├── README.txt
+│       │   ├── RKWIFIBT_APP_V1.1.7z
+│       │   ├── RK平台_RTL8723DS_AIRKISS配网说明.pdf
+│       │   ├── Rockchip_Developer_Guide_DeviceIo_Bluetooth_CN.pdf
+│       │   ├── Rockchip_Developer_Guide_DeviceIo_Bluetooth_EN.pdf
+│       │   ├── Rockchip_Developer_Guide_Network_Config_CN.pdf
+│       │   ├── Rockchip_Developer_Guide_Network_Config_EN.pdf
+│       │   ├── Rockchip_Introduction_RK3308_DeviceIo_WIFI_CN.pdf
+│       │   ├── Rockchip_Introduction_RK3308_DeviceIo_WIFI_EN.pdf
+│       │   ├── 最新WIFI接口说明.txt
+│       │   └── 最新蓝牙接口说明.txt
+│       └── WIFI性能测试PC工具
+│           └── iperf-2.0.5-2-win32.zip
 ├── Others
 │   ├── Rockchip_User_Guide_Bug_System_CN.pdf
 │   └── Rockchip_User_Guide_SDK_Application_And_Synchronization_CN.pdf
-├── RK_Linux_SDK_Supported_System_Kernel_Version_and_ISP_Version_List.png
-├── Rockchip_Developer_Guide_Linux_Software_CN.pdf
-
+└── RK_Linux_SDK_Supported_System_Kernel_Version_and_ISP_Version_List.png
+qualcomm
+├── Common
+│   ├── PMIC
+│   │   └── 80-86326-2_REV_AJ_QCS6490_Power_Management_ICs_Landing_Page.pdf
+│   └── SYSTEM_SOFTWARE
+│       └── 80-70030-252_REV_AA_System_Software_Overview_User_Guide.pdf
+├── datasheet
+│   └── qcs6490
+│       └── 80-23889-1_REV_AW_QCS6490_and_QCS5430_Data_Sheet.pdf
+└── Linux
+    ├── Audio
+    │   └── 80-70020-16_REV_AB_Qualcomm_Linux_Audio_Guide.pdf
+    ├── Bluetooth
+    │   └── 80-70020-13_REV_AA_Qualcomm_Linux_Bluetooth_Guide.pdf
+    ├── Camera
+    │   └── 80-80021-17_REV_AD_Qualcomm_Linux_Camera_Guide.pdf
+    ├── Graphics
+    │   └── 80-70014-19_REV_AK_Qualcomm_Linux_Graphics_Guide.pdf
+    ├── Interfaces
+    │   └── 80-70014-8_REV_AU_Qualcomm_Linux_Interfaces_Guide.pdf
+    ├── Linux_Kernel
+    │   └── 80-70014-3_REV_AR_Qualcomm_Linux_Kernel_Guide.pdf
+    ├── Profile
+    │   └── 80-70017-10_REV_AA_Qualcomm_Linux_Performance_Guide.pdf
+    ├── Security
+    │   └── 80-70014-11_REV_AR_Qualcomm_Linux_Security_Guide.pdf
+    ├── Storage
+    │   └── 80-70014-6_REV_AM_Qualcomm_Linux_Storage_Guide.pdf
+    ├── System_Software
+    │   └── 80-70018-252_REV_AD_Qualcomm_Linux_Software_System_Architecture.pdf
+    └── Video
+        └── 80-70014-20_REV_AH_Qualcomm_Linux_Video_Guide.pdf
